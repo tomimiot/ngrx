@@ -120,6 +120,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngrx-test"
+    }
+  },
+  "defaultProject": "ngrx-test",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

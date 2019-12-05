@@ -1,0 +1,17 @@
+<table>
+  <tr *ngFor="let hero of (entities$ | async)">
+    <td>{{hero.id}}</td>
+    <td>{{hero.name}}</td>
+    <td>
+      <button>Edit</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td><input #idInput placeholder="id"></td>
+    <td><input #nameInput placeholder="name"></td>
+    <td>
+      <button (click)="add({id: idInput.value, name: nameInput.value})">Add</button>
+    </td>
+  </tr>
+</table>
